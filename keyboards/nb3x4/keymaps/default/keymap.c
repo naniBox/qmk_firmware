@@ -5,6 +5,7 @@
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
 #define _BL 0
+#define _______ KC_TRNS
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* Keymap _BL: (Base Layer) Default Layer
@@ -16,10 +17,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |  F9| F10| F11| F12|
  * '-------------------'
    */
+/*
 [_BL] = KEYMAP(
-  KC_F1,  KC_F2,  KC_F3,  KC_F4, \
-  KC_F5,  KC_F6,  KC_F7,  KC_F8, \
-  KC_F9, KC_F10, KC_F11, KC_F12)
+  KC_1,		KC_2,		KC_3,		KC_4, \
+  KC_5,		KC_6, 		KC_7,		KC_8, \
+  KC_9,		KC_0,		KC_A,		KC_B)
+*/
+[_BL] = KEYMAP(
+  KC_ESCAPE,		KC_COPY,		KC_PASTE,			KC_MUTE, \
+  KC_TAB,			_______, 		KC_MS_WH_UP,		KC_VOLU, \
+  _______,			KC_CALC,		KC_MS_WH_DOWN,		KC_VOLD)
+
+/*
+[_BL] = KEYMAP(
+  KC_ESCAPE,		KC_COPY,		KC__MUTE, 		_______, \
+  KC_TAB,			KC_PASTE, 		KC__VOLUP, 	_______, \
+  _______,			_______,		KC__VOLDOWN, 	_______)
+  */
+
 };
 
 /*enum function_id {

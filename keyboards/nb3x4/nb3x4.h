@@ -1,5 +1,5 @@
-#ifndef CLUEPAD_H
-#define CLUEPAD_H
+#ifndef NB3X4_H
+#define NB3X4_H
 
 #include "quantum.h"
 
